@@ -2,12 +2,11 @@ import { Col, Table, Row, Button } from "react-bootstrap"
 import { useAuth } from "../provider/userProviderLogin"
 import { useEffect, useState } from "react"
 import { ModalUser } from "./ModalUser"
-import { InfoLogin } from "../basic/AvisoLogin"
+import { InfoLogin,ToastCustom } from "../basic"
 import { LiaUserEditSolid } from "react-icons/lia"
 import { AiOutlineUsergroupDelete } from "react-icons/ai"
-import { ToastCustom } from "../basic/Toasts"
-import {useUsers} from '../../hooks/users/useUsers'
-import { deleteUser } from "../../services/users"
+import {useUsers} from '../../hooks/users/useUsers.js'
+import { deleteUser } from "../../services/users.js"
 export default function ListUser() {
     const token = sessionStorage.getItem('tokenSesion')
     const { getUsers } = useAuth()

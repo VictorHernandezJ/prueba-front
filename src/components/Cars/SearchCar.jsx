@@ -1,7 +1,7 @@
 import { Form, Button, Row, Col, Table } from "react-bootstrap"
 import Input from "../basic/Input"
 import { useState } from "react"
-import { searchCar } from "../../services/vehicles"
+import { searchCar } from "../../services/vehicles.js"
 import { InfoLogin } from "../basic/AvisoLogin"
 import { CiSearch } from "react-icons/ci"
 export default function SearchCar() {

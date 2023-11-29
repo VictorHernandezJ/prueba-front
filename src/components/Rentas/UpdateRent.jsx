@@ -1,10 +1,9 @@
 import { Form, Row, Col, Button } from "react-bootstrap"
-import Input from "../basic/Input"
 import { useState } from "react"
 import { formatoIso, transforDate } from "/src/helpers/date"
 import { useAuth } from "../provider/userProviderLogin"
-import { updateRent } from "../../services/rentas"
-import { ToastCustom } from "../basic/Toasts"
+import { updateRent } from "../../services/rentas.js"
+import { ToastCustom, Input } from "../basic"
 export function UpdateRent({ data }) {
     const token = sessionStorage.getItem('tokenSesion')
     const { cars } = useAuth()

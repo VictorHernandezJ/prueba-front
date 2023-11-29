@@ -1,9 +1,8 @@
 import { Button, Form, Container, Stack, Row, Col } from "react-bootstrap"
-import Input from '../basic/Input'
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { ToastCustom } from "../basic/Toasts"
-import { createUser } from "../../services/users"
+import { ToastCustom, Input } from "../basic"
+import { createUser } from "../../services/users.js"
 
 export default function CreateUser() {
     let [firstName, setFirstName] = useState('')

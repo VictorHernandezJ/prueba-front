@@ -1,10 +1,10 @@
 import { Table } from 'react-bootstrap';
 import { useAuth } from '../provider/userProviderLogin';
-import { useVehicles } from '../../hooks/vehicles/useVehicles';
+import { useVehicles } from '../../hooks/vehicles/useVehicles.js';
 import { useEffect, useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import { ModalCard } from './Modal.Car';
-import { deleteCar } from '../../services/vehicles';
+import { deleteCar } from '../../services/vehicles.js';
 import { InfoLogin } from '../basic/AvisoLogin';
 import { CiEdit } from "react-icons/ci";
 import { MdDeleteForever } from "react-icons/md";

@@ -1,9 +1,8 @@
 import { Form, Button, Row, Col, Table } from "react-bootstrap"
-import Input from "../basic/Input"
+import {Input, InfoLogin} from "../basic"
 import { useState } from "react"
-import { searchRent } from "../../services/rentas"
-import { transforDate } from "../../helpers/date"
-import { InfoLogin } from "../basic/AvisoLogin"
+import { searchRent } from "../../services/rentas.js"
+import { transforDate } from "../../helpers/date.js"
 export default function SearchRent() {
     const token = sessionStorage.getItem('tokenSesion')
     const [search, setSearch] = useState('')

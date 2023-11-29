@@ -1,6 +1,6 @@
 import { Form, Row, Col, Stack, Button, FloatingLabel } from "react-bootstrap"
 import { useState } from "react"
-import { updateCar } from "../../services/vehicles"
+import { updateCar } from "../../services/vehicles.js"
 import { ToastCustom } from "../basic/Toasts"
 export function UpdateCar({ data }) {
     const token = sessionStorage.getItem('tokenSesion')
