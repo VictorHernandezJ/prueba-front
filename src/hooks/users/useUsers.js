@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getUsers } from "../../services/users";
+import { getUsers } from "/src/services/users";
 const useUsers = (token) => {
     const [isData,setIsData]=useState(false)
     const [data, setData] = useState(null)

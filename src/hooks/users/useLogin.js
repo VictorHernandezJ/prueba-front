@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { SignIn } from "../../services/auth";
+import { SignIn } from "/src/services/auth";
 export const useLogin = ({ credenciales }) => {
     const [isLogin, setIsLogin] = useState(false)
     const [data, setData] = useState(null)

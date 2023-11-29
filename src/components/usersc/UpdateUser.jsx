@@ -1,6 +1,6 @@
 import { Form, Row, Col, Stack, Button, FloatingLabel } from "react-bootstrap"
 import { useState } from "react"
-import { updateUser } from "../../services/users"
+import { updateUser } from "/src/services/users"
 import { ToastCustom } from "../basic/Toasts"
 
 export function UpdateUser({ data }) {

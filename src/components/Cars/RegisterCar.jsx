@@ -1,7 +1,7 @@
 import { Button, Form, Container, Stack, Row, Col } from "react-bootstrap"
 import { useState } from "react"
 import Input from '../basic/Input'
-import { createVehicle } from "../../services/vehicles"
+import { createVehicle } from "/src/services/vehicles"
 import { InfoLogin } from "../basic/AvisoLogin"
 import { ToastCustom } from "../basic/Toasts"
 
