@@ -1,7 +1,7 @@
 import { Form, Row, Col, Stack, Button, FloatingLabel } from "react-bootstrap"
 import { useState } from "react"
 import { updateUser } from "../../services/users.js"
-import { ToastCustom } from "../basic/Toasts"
+import { ToastCustom } from "../basic/Toasts.jsx"
 
 export function UpdateUser({ data }) {
     const { username, email, first_name, last_name, id } = data

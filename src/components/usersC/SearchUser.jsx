@@ -1,8 +1,8 @@
 import { Form, Button, Row, Col, Table } from "react-bootstrap"
-import Input from "../basic/Input"
+import Input from "../basic/Input.jsx"
 import { useState } from "react"
 import { searchUser } from "../../services/users.js"
-import { InfoLogin } from "../basic/AvisoLogin"
+import { InfoLogin } from "../basic/AvisoLogin.jsx"
 import { RiUserSearchLine } from "react-icons/ri"
 export default function SearchUser() {
     const token = sessionStorage.getItem('tokenSesion')
