@@ -6,8 +6,8 @@ import { InfoLogin } from "../basic/AvisoLogin"
 import { LiaUserEditSolid } from "react-icons/lia"
 import { AiOutlineUsergroupDelete } from "react-icons/ai"
 import { ToastCustom } from "../basic/Toasts"
-import {useUsers} from '../../hooks/users/useUsers'
-import { deleteUser } from "../../services/users"
+import {useUsers} from '/src/hooks/users/useUsers'
+import { deleteUser } from "/src/services/users"
 export default function ListUser() {
     const token = sessionStorage.getItem('tokenSesion')
     const { getUsers } = useAuth()
