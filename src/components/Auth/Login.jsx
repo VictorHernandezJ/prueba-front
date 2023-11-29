@@ -14,7 +14,6 @@ function Login() {
     const [credenciales, setCredenciales] = useState(null)
     const { isLogin, data } = useLogin({ credenciales })
     const { login, getUserName } = useAuth()
-    console.log('cuando carga...', isLogin)
     const [activeLoading, setActiveLoading] = useState(true)
 
     const handleLogin = async (event) => {

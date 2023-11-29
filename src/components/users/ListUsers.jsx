@@ -1,7 +1,7 @@
 import { Col, Table, Row, Button } from "react-bootstrap"
 import { useAuth } from "../provider/userProviderLogin"
 import { useUsers } from '../../hooks/users/useUsers'
-import { deleteUser } from "../../services/Users"
+import { deleteUser } from "../../services/users"
 import { useEffect, useState } from "react"
 import { ModalUser } from "./ModalUser"
 import { InfoLogin } from "../basic/AvisoLogin"

@@ -2,7 +2,7 @@ import { Button, Form, Container, Stack, Row, Col } from "react-bootstrap"
 import Input from '../basic/Input'
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { createUser } from "../../services/Users"
+import { createUser } from "../../services/users"
 import { ToastCustom } from "../basic/Toasts"
 
 export default function CreateUser() {

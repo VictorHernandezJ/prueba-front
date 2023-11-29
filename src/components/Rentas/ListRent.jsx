@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useRents } from "../../hooks/rents/useRents";
 import { Table, Row, Button, Col } from "react-bootstrap";
 import { ModalRent } from "./ModalRent";
-import { transforDate } from "../../helpers/Date";
+import { transforDate } from "../../helpers/date";
 import { InfoLogin } from "../basic/AvisoLogin";
 import { CiEdit } from "react-icons/ci";
 import { MdDeleteForever } from "react-icons/md";

@@ -4,7 +4,6 @@ import ListUser from './components/users/ListUsers'
 import Login from './components/Auth/Login'
 import SearchUser from './components/users/SearchUser'
 import { Route, Routes } from 'react-router-dom'
-import { Home } from './components/home'
 import ListCar from './components/Cars/ListCar'
 import RegisterCar from './components/Cars/RegisterCar'
 import RegisterRent from './components/Rentas/RegisterRent'
@@ -12,7 +11,7 @@ import Menu from './components/basic/Menu'
 import { AuthProvider } from './components/provider/userProviderLogin'
 import { UpdateUser } from './components/users/UpdateUser'
 import SearchCar from './components/Cars/SearchCar'
-import { ListRent } from './components/Rentas/ListRent' 
+import { ListRent } from './components/Rentas/ListRent'
 import SearchRent from './components/Rentas/SearchRents'
 import { ResetPassword } from './components/Auth/ResetPassword'
 function App() {
@@ -32,9 +31,7 @@ function App() {
             <Route path='/users/list-user' element={<ListUser />} />
             <Route path='/users/update-user' element={<UpdateUser />} />
             <Route path='/users/create-user' element={<CreateUser />} />
-            {/* {<h1> create se hizo con el url de auth</h1>} */} 
             <Route path='/users/search-user/:id' element={<SearchUser />} />
-            <Route path='/home' element={<Home />} />
             <Route path='/vehicles/list-vehicle' element={<ListCar />} />
             <Route path='/vehicles/register-vehicle' element={<RegisterCar />} />
             <Route path='/vehicles/search-vehicle' element={<SearchCar />} />

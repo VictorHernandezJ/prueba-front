@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { Col, Container, Form, Row, FloatingLabel, Button } from 'react-bootstrap'
 import Input from '../../components/basic/Input'
 import { useAuth } from '../provider/userProviderLogin'
-import { formatoIso } from '../../helpers/Date'
+import { formatoIso } from '../../helpers/date'
 import { getIdUser } from '../../helpers/data'
-import { createRent } from '../../services/Rentas'
+import { createRent } from '../../services/rentas'
 import { InfoLogin } from '../basic/AvisoLogin'
 import { ToastCustom } from '../basic/Toasts'
 export default function RegisterRent() {
@@ -50,7 +50,7 @@ export default function RegisterRent() {
                 token ? <div className="container p-3 w-75">
                     <div className='w-100 d-block cristal p-5'>
                         <Container fluid='md'>
-                            <h2 className="text-center text text-uppercase">Create Rent</h2>
+                            <h2 className="text-center text text-uppercase">Create  Rent</h2>
                             <Form>
                                 <Row>
                                     <Col>
