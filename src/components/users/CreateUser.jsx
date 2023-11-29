@@ -3,7 +3,7 @@ import Input from '../basic/Input'
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { ToastCustom } from "../basic/Toasts"
-import { createUser } from "/src/services/users"
+import { createUser } from "../../services/users"
 
 export default function CreateUser() {
     let [firstName, setFirstName] = useState('')
