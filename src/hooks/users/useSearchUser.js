@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { searchUser } from "/src/services/users";
+import { searchUser } from "../../services/users";
 const useSearchUser = (id) => {
     const [user, setUser] = useState(null)
     useEffect(() => {

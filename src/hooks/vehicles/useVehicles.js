@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getVehicles } from "/src/services/vehicles";
+import { getVehicles } from "../../services/vehicles";
 const useVehicles = (token) => {
     const [data, setData] = useState(null)
     useEffect(() => {

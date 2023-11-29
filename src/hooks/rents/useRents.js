@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getRents } from "/src/services/rentas";
+import { getRents } from "../../services/rentas";
 const useRents = (token) => {
     const [data, setData] = useState(null)
     useEffect(() => {
