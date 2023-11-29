@@ -1,13 +1,13 @@
 import { Col, Table, Row, Button } from "react-bootstrap"
 import { useAuth } from "../provider/userProviderLogin"
-import { useUsers } from '../../hooks/users/useUsers'
-import { deleteUser } from "../../services/users"
 import { useEffect, useState } from "react"
 import { ModalUser } from "./ModalUser"
 import { InfoLogin } from "../basic/AvisoLogin"
 import { LiaUserEditSolid } from "react-icons/lia"
 import { AiOutlineUsergroupDelete } from "react-icons/ai"
 import { ToastCustom } from "../basic/Toasts"
+import {useUsers} from '../../hooks/users/useUsers'
+import { deleteUser } from "../../services/users"
 export default function ListUser() {
     const token = sessionStorage.getItem('tokenSesion')
     const { getUsers } = useAuth()
@@ -35,7 +35,7 @@ export default function ListUser() {
     }
     const userDelete = (id) => {
         console.log('ejecutando... ' + id)
-        deleteUser(id)
+        deleteUser (id)
         setIsDelete(!isDelete)
         const newUser = newUsers.filter(user => user.id !== id)
         setNewUsers(newUser)

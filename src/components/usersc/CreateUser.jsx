@@ -2,8 +2,8 @@ import { Button, Form, Container, Stack, Row, Col } from "react-bootstrap"
 import Input from '../basic/Input'
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { createUser } from "../../services/users"
 import { ToastCustom } from "../basic/Toasts"
+import { createUser } from "../../services/users"
 
 export default function CreateUser() {
     let [firstName, setFirstName] = useState('')
@@ -25,10 +25,8 @@ export default function CreateUser() {
             password_confirmation: password
         }
         setIsCreate(!isCreate)
-        console.log('desde f click..', isCreate)
-        console.log(newUser)
         const fetchData = async () => {
-            const response = await createUser(newUser)
+            const response = await createUser (newUser)
             if (typeof (response) === 'object') {
                 setIsCreate(true)
             }
