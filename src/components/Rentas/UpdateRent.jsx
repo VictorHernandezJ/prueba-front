@@ -3,7 +3,8 @@ import { useState } from "react"
 import { formatoIso, transforDate } from "/src/helpers/date"
 import { useAuth } from "../provider/userProviderLogin"
 import { updateRent } from "../../services/rentas.js"
-import { ToastCustom, Input } from "../basic"
+import { ToastCustom } from "../basic/Toasts.jsx"
+import Input from "../basic/Input.jsx"
 export function UpdateRent({ data }) {
     const token = sessionStorage.getItem('tokenSesion')
     const { cars } = useAuth()
